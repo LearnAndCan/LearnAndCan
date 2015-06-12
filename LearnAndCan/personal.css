@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+.navbox{
+    width: 15%;
+   margin: 200px;
+    height: 100%;
+    border-right: 1px dashed darkgray;
+
+}
+.navbox li{
+    list-style: none;
+    /*border-bottom: 2px dashed darkgray;*/
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    /*background-color: darkgray;*/
+}
