@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link href="../public/css/register.css" rel="stylesheet" type="text/css">
+    <script src="../public/meterials/jquery.min.js"></script>
+    <script src="../public/meterials/ajaxfileupload.js"></script>
+    <!--<script src="../public/js/register.js"></script>-->
+    <script src="../public/js/md5.js"></script>
+</head>
+<body>
+    <div class="head">
+        注 册 你 学 我 会
+    </div>
+    <div class="mainContainer">
+        <div class="background"></div>
+        <form class="register" id="register" name="register" method="post" action="">
+            <input type="button" class="haveButton" value=" 已 有 账 户 ?" onclick="window.location.href='login.html'">
+            <table width="100%" style="margin-top: 30px">
+                <tr>
+                    <td width="30%"><hr color="black"/></td>
+                    <td width="30%" style="font-size: 30px;font-weight: bolder;text-align: center">个人信息</td>
+                    <td width="30%"><hr color="black"/></td>
+                </tr>
+            </table>
+            <label><input type="text" placeholder="用户名" class="input" name="name" id="name" required></label>
+            <label><input type="text" placeholder="身份证号码（选填）" class="input" name="idCard" id="idCard" required></label>
+            <span style="position: absolute;margin-top: -40px;font-size: 20px">每个身份证号码只能注册一个用户</span>
+            <label><input type="text" placeholder="学校（选填）" class="input" name="school" id="school" required></label>
+            <label style="font-size: 20px">头像:&nbsp;&nbsp;&nbsp;<input type="file" name="idCardPic" id="idCardPic" onchange="ajaxFileUploadidCard()" accept=".PNG,.JPEG,.JPG"></label>
+            <!--<span id="example" onmousemove="onMouse()" onmouseout="outMouse()" style="margin-left: -50px">查看照片示例</span><br/><br/><br/>-->
+            <!--<label style="font-size: 20px">手持学生证照片:&nbsp;&nbsp;&nbsp;<input type="file" name="studentCardPic" id = "studentCardPic" onchange = "ajaxFileUploadstuCard()" accept=".PNG,.JPEG,.JPG"><span></span></label>-->
+            <div class="tips">
+                请上传注册者本人手持身份证和学生证的正面照照片，要求画面清晰，能看清身份证以及学生证上的信息。
+            </div>
+            <label><input type="text" placeholder="联系电话" class="input" id="phone" name="phone" required></label>
+            <table width="100%" style="margin-top: 30px">
+                <tr>
+                    <td width="30%"><hr color="black"/></td>
+                    <td width="30%" style="font-size: 30px;font-weight: bolder;text-align: center">账户信息</td>
+                    <td width="30%"><hr color="black"/></td>
+                </tr>
+            </table>
+            <label><input type="email" placeholder="登录邮箱" class="input" name="email" id="email" required></label>
+            <span style="position: absolute;margin-top: -40px;font-size: 20px">每个邮箱只能注册一个用户</span>
+            <label><input type="password" placeholder="密码" class="input" name="keyword" id="keyword" required></label>
+            <label><input type="password" placeholder="确认密码" class="input" name="regKeyword" id="regKeyword" required></label>
+            <label><input type="text" placeholder="推荐码（选填）" class="input" name="command" id="command"></label>
+            <input type="button" onclick="checkRegister()" class="haveButton" value=" 确 认 注 册 ">
+        </form>
+        <div class="footerBack"></div>
+        <div class="footer">
+            <div class="share">
+                <img src="../public/img/blog.png">
+                <img src="../public/img/wechat.png" class="buttonLeft">
+                <img src="../public/img/qzone.png" class="buttonLeft">
+            </div>
+            <div class="links">
+                <ol>
+                    <li><a href="aboutUs.html">关于我们</a></li>
+                    <li><a href="aboutUs.html">人才招聘</a></li>
+                    <li><a href="aboutUs.html">联系我们</a> </li>
+                    <li><a href="aboutUs.html">意见反馈</a> </li>
+                </ol>
+                <div style="clear: both"></div>
+            </div>
+            <p>Copyright © 2015 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+        </div>
+    </div>
+    <img src="../public/img/example.jpg" class="example" style="display: none;border: 1px solid black" >
+</body>
+</html>

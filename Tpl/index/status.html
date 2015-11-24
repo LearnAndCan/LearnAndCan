@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>审核状态</title>
+    <link href="../../../../Desktop/www/status.css" rel="stylesheet" type="text/css">
+    <script src="../scripts/jquery-1.4.1.min.js"></script>
+    <script src="status.js"></script>
+</head>
+<body>
+    <div id="head">
+        老 师 注 册 审 核 状 态
+    </div>
+    <div class="status">
+        <img src="../public/img/1.png">
+        <div class="float">注册账号 - ></div>
+        <img src="../public/img/2.png">
+        <div class="float">填写资料 - ></div>
+        <img src="../public/img/3.png">
+        <div class="float">审核中 - ></div>
+        <img src="../public/img/4.png">
+        <div class="float" id="num1">审核结果</div>
+    </div>
+    <div id="info">
+        <div id="inProgress" style="display: block">
+            工作人员正在审核，请您耐心等待审核结果......
+        </div>
+        <div id="done" style="display: none">
+            <img src="../public/img/success.jpg" style="float: left;margin-right: 100px">
+            <p style="font-size: 36px;padding-top: 20px">恭喜您，注册成功！</p>
+            <span>请您关注注册邮箱，及时接收我们的通知邮件，欢迎您的加入!</span>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            var urlinfo=window.location.href; //获取当前页面的url
+            var len=urlinfo.length;//获取url的长度
+            var offset=urlinfo.indexOf("?"); //设置参数字符串开始的位置
+            var newsidinfo=urlinfo.substr(offset,len); //取出参数字符串 这里会获得类似“id=1”这样的字符串
+            var newsids=newsidinfo.split("=");//对获得的参数字符串按照“=”进行分割
+            var newsid=newsids[1];//得到参数值
+            if(newsid == 1){
+                document.getElementById("inProgress").style.display="blcok";
+                document.getElementById("done").style.display="none";
+                document.getElementById("num1").style.color="darkgray";
+            }
+            else if(newsid == 2){
+                document.getElementById("inProgress").style.display="none";
+                document.getElementById("done").style.display="block";
+            }
+            else if(newsid == 0){
+                alert("认证不通过，请重新提交资料");
+                 document.getElementById("inProgress").style.display="none";
+                document.getElementById("done").style.display="none";
+            }
+            else{
+                alert("服务器数据错误，请重新登录");
+//                window.location.href="login.html"
+            }
+        });
+    </script>
+</body>
+</html>
