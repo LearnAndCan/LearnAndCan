@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+#jionUsBack{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 998;
+    background-color: white;
+    opacity: 0.4;
+}
+#joinUs{
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 80px;
+    /*background: -webkit-linear-gradient(top, #54AFC0,#FEFEFE);*/
+    /*background: -moz-linear-gradient( top,#54AFC0,#FEFEFE));*/
+    /*background: -o-linear-gradient(top,#54AFC0, #FEFEFE);*/
+    /*font-size: 40px;*/
+    color: black;
+    line-height: 80px;
+    text-align: center;
+}
+#register{
+    position: absolute;
+    z-index: 1000;
+    line-height: 80px;
+    right: 6%;
+}
+#register a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#register a:hover{
+    font-weight: bolder;
+}
+#cancell{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 999;
+}
+.video{
+    font-size: 30px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.video_2{
+    font-size: 30px;
+    position: absolute;
+    top: 200px;
+    right: 180px;
+}
+.video span,.video_2 span{
+    cursor: pointer;
+    font-size: 20px;
+}
+.logo{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin: 40px 0 40px 0;
+}
+.downloadBox{
+    width: 100%;
+    text-align: center;
+}
+.downloadBox button{
+    height: 70px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.downloadBox button:hover{
+    background-color: rgba(49, 176, 213, 0.67);
+    box-shadow: 3px 3px 3px;
+}
+.buttonLeft{
+    margin-left: 5%;
+}
+.downloadBox img{
+    height: 100px;
+    margin-left: 1%;
+}
+.downloadBox img:hover{
+    /*background-color: darkgray;*/
+    box-shadow: 3px 3px 3px;
+    cursor: pointer;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+}
+#phone{
+    width: 100%;
+    text-align: center;
+}
+#phone img{
+    height: 420px;
+}
+#showQRcode{
+    width: 100%;
+    text-align: center;
+}
+#showQRcode img{
+    height: 420px;
+}
+hr{
+    height: 1px;
+    border: none;
+    border-top: 1px solid black;
+    margin-top: -30px;
+}
+.divContainer_1{
+    width: 80%;
+    margin: 60px auto 0 auto;
+}
+.divContainer_2{
+    width: 80%;
+    margin: 0 auto;
+}
+.detialDiv{
+    width: 33.3%;
+    text-align: center;
+    float: left;
+    margin-bottom: 40px;
+}
+.detialDiv img{
+    width: 310px;
+    height: 250px;
+}
+.footer{
+    background-color: #F4F4F4;
+    width: 100%;
+    bottom: 0;
+    height: 200px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer a{
+    color: black;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: red;
+    font-weight: bolder;
+}
+.shield{
+    position: absolute;
+    opacity: 0.65;
+    height: 250px;
+    width: 310px;
+    background-color: black;
+    text-align: center;
+    line-height: 250px;
+    font-size: 30px;
+    color: white;
+}
+.share{
+    width: 100%;
+}
+.share img:hover{
+    box-shadow: 3px 3px 3px;
+}
+.links{
+    width: 100%;
+}
+.links li{
+    float: left;
+    list-style: none;
+    margin-left: 13%;
+    font-size: 30px;
+}
+.footer p{
+    font-size: 20px;
+    margin-top: 20px;
+}

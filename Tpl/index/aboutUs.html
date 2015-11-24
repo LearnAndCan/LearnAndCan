@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="../public/css/aboutUs.css" type="text/css">
+    <script src="../public/js/aboutUs.js"></script>
+</head>
+<body>
+<div class="head">
+    你 学 我 会
+</div>
+<div class="background">
+    <div class="aboutUS">
+        <div class="navbar">
+            <ol style="cursor: pointer">
+                <li onclick="window.location.href='index.html'">网站首页</li>
+                <li onclick="showAbout()">关于我们</li>
+                <li onclick="showRecruit()">人才招聘</li>
+                <li onclick="showContact()">联系我们</li>
+                <li onclick="showFeedback()">意见反馈</li>
+            </ol>
+        </div>
+        <div id="about" style="display: block"> <!--关于我们-->
+            <p style="font-size: 40px;margin: 50px 0 10px 9.5%">关于我们</p>
+            <hr style="color: black;height: 3px;border-top: 3px solid black;margin-left: 5%;width: 25%"/>
+            <div class="realContent">
+               <p> 这是你学我会，不是每个老师都是男神哦~~~</p>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div id="recruit" style="display: none"> <!--人才招聘-->
+            <p style="font-size: 40px;margin: 50px 0 10px 9.5%">人才招聘</p>
+            <hr style="color: black;height: 3px;border-top: 3px solid black;margin-left: 5%;width: 25%"/>
+            <div class="realContent">
+                <div class="everyline">  <!--从这里开始循环，每个信息一行-->
+                    <div class="description">
+                        <img src="../public/img/hehe.png"><span style="font-size: 40px;margin-left: 50px">苹果</span><br/>
+                        <p>这里是描述描述描述描述  是描述</p>
+                    </div>
+                    <div class="contactPeople">
+                        <p>联系人：么么哒</p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div> <!--每一行到这里结束-->
+                <div class="everyline">  <!--从这里开始循环，每个信息一行-->
+                    <div class="description">
+                        <img src="../public/img/hehe.png"><span style="font-size: 40px;margin-left: 50px">安卓</span><br/>
+                        <p>这里是描述描述描述描述  是描述</p>
+                    </div>
+                    <div class="contactPeople">
+                        <p>联系人：么么哒</p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div id="contact" style="display: none"> <!--俩系我们-->
+            <p style="font-size: 40px;margin: 50px 0 10px 9.5%">联系我们</p>
+            <hr style="color: black;height: 3px;border-top: 3px solid black;margin-left: 5%;width: 25%"/>
+            <div class="realContent" style="font-size: 20px;line-height: 50px;padding-left: 100px">
+                服务热线： 400-8207860<br/>
+                业务合作： 400-9876289<br/>
+                总机： 0571-26888888<br/>
+                传真： 0571-88157868<br/>
+                地址： 成都市XXXXXXX（电科惠创收）<br/>
+                邮编： 610000<br/>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div id="feedback" style="display: none"> <!--意见反馈-->
+            <p style="font-size: 40px;margin: 50px 0 10px 9.5%">意见反馈</p>
+            <hr style="color: black;height: 3px;border-top: 3px solid black;margin-left: 5%;width: 25%"/>
+            <form class="realContent" action="" method="" name="" id="" style="padding-left: 100px">
+                <table>
+                    <tr>
+                        <td>意见主题:</td>
+                        <td><label><input type="text" name="theme" id="theme" required></label></td>
+                    </tr>
+                    <tr>
+                        <td>意见对象:</td>
+                        <td><label><input type="text" name="theme" id="object" required></label></td>
+                    </tr>
+                    <tr>
+                        <td>详细内容:</td>
+                        <td> <label><textarea id="detials" name="detials" required></textarea></label></td>
+                    </tr>
+                    <tr>
+                        <td>建议方案:</td>
+                        <td><label><textarea id="advise" name="advise" required></textarea></label></td>
+                    </tr>
+                </table>
+                <button type="submit" onclick="checkFeedback()">提 交</button>
+            </form>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+</div>
+<div class="footerBack"></div>
+<div class="footer">
+    <div class="share">
+        <img src="../public/img/blog.png">
+        <img src="../public/img/wechat.png" class="buttonLeft">
+        <img src="../public/img/qzone.png" class="buttonLeft">
+    </div>
+    <div class="links">
+        <ol>
+            <li><a href="aboutUs.html">关于我们</a></li>
+            <li><a href="aboutUs.html">人才招聘</a></li>
+            <li><a href="aboutUs.html">联系我们</a> </li>
+            <li><a href="aboutUs.html">意见反馈</a> </li>
+        </ol>
+        <div style="clear: both"></div>
+    </div>
+    <p>Copyright © 2015 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+</div>
+</body>
+</html>

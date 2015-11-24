@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    width: 100%;
+    height: 120px;
+    background: -webkit-linear-gradient(top, #54AFC0,#FEFEFE);
+    background: -moz-linear-gradient( top,#54AFC0,#FEFEFE));
+    background: -o-linear-gradient(top,#54AFC0, #FEFEFE);
+    text-align: center;
+    line-height: 120px;
+    font-size: 40px;
+}
+.footerBack{
+    width: 100%;
+    height: 250px;
+    background-color: darkgrey;
+    opacity: 0.5;
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    margin-top: -250px;
+    text-align: center;
+}
+li{
+    list-style: none;
+    float: left;
+    font-size: 30px;
+    margin-left: 13%;
+}
+.footer a{
+    color: black;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: red;
+    font-weight: bolder;
+}
+.share img:hover{
+    box-shadow: 3px 3px 3px;
+}
+.share img{
+    margin: 40px 50px;
+}
+.download{
+    width: 100%;
+    height: 1000px;
+    background-image: url("../img/scoll2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+}
+.info p{
+    position: absolute;
+    margin-top: 200px;
+    color: white;
+    font-size: 40px;
+    margin-left: 200px;
+}
+.info span{
+    position: absolute;
+    margin-top: 250px;
+    color: white;
+    font-size: 40px;
+    left: 240px;
+}
+.phone{
+    margin-top: 100px;
+}
+.cellPhone{
+    height: 50px;
+    width: 150px;
+    border: 1px solid white;
+    line-height: 50px;
+    float: left;
+    margin-top: 50px;
+    font-size: 30px;
+}
