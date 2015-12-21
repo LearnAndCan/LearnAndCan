@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>注册页面</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<style type="text/css">
+		input{
+			display: block;
+		}
+	</style>
+	
+</head>
+<body>
+		<form action="{:U('Admin/Register/register')}" method="post">
+
+			用户名：<input type="text" name="username" >
+			昵称：<input type="text" name="nickname">
+			密码：<input type="text" name="pwd">
+			年龄：<input type="text" name="age">
+			工作地：<input type="text" name="workplace">
+			情感状态：<input type="text" name="emotion">
+			<input type="submit"value="注册">
+		</form>
+
+</body>
+</html>
