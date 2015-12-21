@@ -1,1 +1,2 @@
-#app codes are placed to here(LearnAndCan/YueQu/App/README.md)
+app codes are placed to here
+/LearnAndCan/YueQu/App/README.md
