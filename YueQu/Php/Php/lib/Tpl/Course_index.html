@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>查看课程</title>
+</head>
+<body>
+
+<div id='main'>
+     <foreach name='course' item='v'>
+      <table border="1">
+   <tr>
+    <th>{$v.id}</th>
+    <th>{$v.username}</th>
+    <th>{$v.theme}</th> 
+    <th>{$v.contain}</th>
+    <th><a href="{:U('Admin/Course/delect',array('id'=>$v[id]))}">删除课程</a>
+   </tr>
+</table>
+     </foreach>
+  </div>
+</body>
+</html>
